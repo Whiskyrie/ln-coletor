@@ -1,0 +1,6 @@
+sessão 1salto-conc-2 (concorrente): 1000 pagamentos em 98.7 s
+  início/fim (unix ns): 1792838909104417376 / 1792839007835962553
+  sucesso: 1000 (100.00%)
+  vazão: 10.128 pagamentos/s
+  latência ms: média 981.9, mediana 949.0, p95 1231.1, p99 1379.3
+  taxa total: 0 msat

@@ -1,0 +1,6 @@
+sessão 2saltos-sinc-1 (sincrono): 1000 pagamentos em 1376.6 s
+  início/fim (unix ns): 1792835495744835098 / 1792836872319823486
+  sucesso: 1000 (100.00%)
+  vazão: 0.726 pagamentos/s
+  latência ms: média 1376.6, mediana 1376.4, p95 1534.8, p99 2241.0
+  taxa total: 1000000 msat

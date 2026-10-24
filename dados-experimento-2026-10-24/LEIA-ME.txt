@@ -1,0 +1,4 @@
+Dados do experimento do TCC2 (Lightning em Raspberry Pi 5, signet; LND v0.21.4-beta).
+sondagens/: 10.080 sondagens de 1 sat a cada 60 s (17/10/2026 05:31 a 24/10/2026 05:32, -03); saude.csv = verificador do nó auxiliar (Hetzner).
+sessoes/:   12 sessões de 1.000 pagamentos de 100 sat (24/10/2026 06:20 a 09:33, -03); resumo.csv, pagamentos.csv (12.000), energia-*.csv (PMIC), logs.
+Observação: no canal Hetzner-PC foi preciso dar ao PC saldo acima da reserva (1.500 sat) para a devolução dos fundos; ver texto do TCC.

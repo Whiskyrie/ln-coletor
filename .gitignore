@@ -1,0 +1,5 @@
+/target
+*.bak*
+# Cópias de trabalho; os dados oficiais do experimento ficam em dados-experimento-2026-10-24/
+/dados-sessoes/
+/dados-sondagens/

@@ -1,0 +1,24 @@
+[package]
+name = "ln-coletor"
+version = "0.1.0"
+edition = "2021"
+description = "Coleta de métricas da Lightning Network (TCC2): sondador de disponibilidade e executor de pagamentos"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+hex = "0.4"
+prost = "0.13"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "signal", "sync", "process"] }
+tonic = { version = "0.12", features = ["tls"] }
+
+[build-dependencies]
+tonic-build = "0.12"
+
+[profile.release]
+opt-level = 3
+lto = "thin"

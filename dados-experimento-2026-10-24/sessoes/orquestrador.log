@@ -1,0 +1,221 @@
+[24/10 06:20:00] === orquestrador de sessões: 12 sessões planejadas; TOTAL=1000 VALOR_SAT=100 REPOUSO_S=300 ===
+[24/10 06:20:00] plano: 1salto-sinc-1 1salto-conc-1 2saltos-sinc-1 2saltos-conc-1 1salto-sinc-2 1salto-conc-2 2saltos-sinc-2 2saltos-conc-2 1salto-sinc-3 1salto-conc-3 2saltos-sinc-3 2saltos-conc-3
+[24/10 06:20:00] == verificação prévia ==
+[24/10 06:20:01]   LND do Pi:      SERVER_ACTIVE
+[24/10 06:20:04]   LND do Hetzner: SERVER_ACTIVE
+[24/10 06:20:05]   LND do PC:      SERVER_ACTIVE
+[24/10 06:20:05]   canais ativos do Pi: 1 (esperado 1)
+[24/10 06:20:08]   canais ativos do Hetzner: 2 (esperado 2)
+[24/10 06:20:08]   rota Pi→PC (2 saltos): ok
+[24/10 06:20:09]   saldo local do Pi no canal: 165120 sat (precisa de pelo menos 105000)
+[24/10 06:20:09]   leitura do PMIC no Pi: ok
+[24/10 06:20:09]   análise local (/home/whiskyrie/Projetos/TCC/ln-coletor/target/release/ln-coletor): ok
+[24/10 06:20:09]   sondador dos 7 dias: parado/concluído (10081 linhas): ok
+[24/10 06:20:09] verificação: TUDO OK
+[24/10 06:20:09] >>> sessão 1salto-sinc-1  (caminho 1salto, modo sincrono, 1000 × 100 sat)
+[24/10 06:20:10]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 06:25:10]   pagamentos em andamento no Pi
+[24/10 06:37:35]   energia desligada
+Sessão 1salto-sinc-1 (modo sincrono): 1000 pagamentos em 733,0 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 1,365 pagamentos/s (12 janelas completas); vazão média da sessão: 1,364 pagamentos/s
+  latência (ms, só sucessos): média 733,0, mediana 795,2, p95 833,0, p99 1184,7, desvio-padrão 136,7
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,417 W (300 amostras), sessão 1,501 W (733 amostras)
+  energia adicional por pagamento: 61,2 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 06:37:35]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 06:37:40]   devolução: ok
+[24/10 06:37:40]   saldo local do Pi no canal: 165120 sat
+[24/10 06:37:40] <<< sessão 1salto-sinc-1 concluída
+[24/10 06:38:40] >>> sessão 1salto-conc-1  (caminho 1salto, modo concorrente, 1000 × 100 sat)
+[24/10 06:38:40]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 06:43:41]   pagamentos em andamento no Pi
+[24/10 06:45:29]   energia desligada
+Sessão 1salto-conc-1 (modo concorrente): 1000 pagamentos em 100,1 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 9,850 pagamentos/s (1 janelas completas); vazão média da sessão: 9,989 pagamentos/s
+  latência (ms, só sucessos): média 998,0, mediana 942,5, p95 1229,1, p99 1706,5, desvio-padrão 146,2
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,434 W (300 amostras), sessão 1,547 W (100 amostras)
+  energia adicional por pagamento: 11,4 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 06:45:29]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 06:45:34]   devolução: ok
+[24/10 06:45:34]   saldo local do Pi no canal: 165120 sat
+[24/10 06:45:34] <<< sessão 1salto-conc-1 concluída
+[24/10 06:46:34] >>> sessão 2saltos-sinc-1  (caminho 2saltos, modo sincrono, 1000 × 100 sat)
+[24/10 06:46:35]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 06:51:35]   pagamentos em andamento no Pi
+[24/10 07:14:39]   energia desligada
+Sessão 2saltos-sinc-1 (modo sincrono): 1000 pagamentos em 1376,6 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 0,726 pagamentos/s (22 janelas completas); vazão média da sessão: 0,726 pagamentos/s
+  latência (ms, só sucessos): média 1376,6, mediana 1376,4, p95 1534,8, p99 2241,0, desvio-padrão 189,5
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,430 W (300 amostras), sessão 1,481 W (1377 amostras)
+  energia adicional por pagamento: 69,7 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 07:14:40]   devolvendo 100000 sat (pc → Pi)
+[24/10 07:14:41]   devolução: ok
+[24/10 07:14:41]   saldo local do Pi no canal: 164120 sat
+[24/10 07:14:41] <<< sessão 2saltos-sinc-1 concluída
+[24/10 07:15:41] >>> sessão 2saltos-conc-1  (caminho 2saltos, modo concorrente, 1000 × 100 sat)
+[24/10 07:15:42]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 07:20:42]   pagamentos em andamento no Pi
+[24/10 07:24:02]   energia desligada
+Sessão 2saltos-conc-1 (modo concorrente): 1000 pagamentos em 193,9 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 5,150 pagamentos/s (3 janelas completas); vazão média da sessão: 5,157 pagamentos/s
+  latência (ms, só sucessos): média 1928,8, mediana 1977,8, p95 2181,5, p99 2439,1, desvio-padrão 202,1
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,434 W (300 amostras), sessão 1,578 W (194 amostras)
+  energia adicional por pagamento: 27,9 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 07:24:03]   devolvendo 100000 sat (pc → Pi)
+[24/10 07:24:04]   devolução: ok
+[24/10 07:24:05]   saldo local do Pi no canal: 163120 sat
+[24/10 07:24:05] <<< sessão 2saltos-conc-1 concluída
+[24/10 07:25:05] >>> sessão 1salto-sinc-2  (caminho 1salto, modo sincrono, 1000 × 100 sat)
+[24/10 07:25:05]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 07:30:06]   pagamentos em andamento no Pi
+[24/10 07:42:21]   energia desligada
+Sessão 1salto-sinc-2 (modo sincrono): 1000 pagamentos em 729,7 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 1,371 pagamentos/s (12 janelas completas); vazão média da sessão: 1,370 pagamentos/s
+  latência (ms, só sucessos): média 729,7, mediana 799,2, p95 837,4, p99 868,7, desvio-padrão 119,6
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,448 W (300 amostras), sessão 1,513 W (730 amostras)
+  energia adicional por pagamento: 47,6 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 07:42:22]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 07:42:27]   devolução: ok
+[24/10 07:42:28]   saldo local do Pi no canal: 163120 sat
+[24/10 07:42:28] <<< sessão 1salto-sinc-2 concluída
+[24/10 07:43:28] >>> sessão 1salto-conc-2  (caminho 1salto, modo concorrente, 1000 × 100 sat)
+[24/10 07:43:28]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 07:48:29]   pagamentos em andamento no Pi
+[24/10 07:50:17]   energia desligada
+Sessão 1salto-conc-2 (modo concorrente): 1000 pagamentos em 98,7 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 10,067 pagamentos/s (1 janelas completas); vazão média da sessão: 10,128 pagamentos/s
+  latência (ms, só sucessos): média 981,9, mediana 949,0, p95 1231,1, p99 1379,3, desvio-padrão 125,3
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,472 W (300 amostras), sessão 1,571 W (99 amostras)
+  energia adicional por pagamento: 9,8 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 07:50:18]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 07:50:22]   devolução: ok
+[24/10 07:50:23]   saldo local do Pi no canal: 163120 sat
+[24/10 07:50:23] <<< sessão 1salto-conc-2 concluída
+[24/10 07:51:23] >>> sessão 2saltos-sinc-2  (caminho 2saltos, modo sincrono, 1000 × 100 sat)
+[24/10 07:51:23]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 07:56:24]   pagamentos em andamento no Pi
+[24/10 08:18:59]   energia desligada
+Sessão 2saltos-sinc-2 (modo sincrono): 1000 pagamentos em 1341,4 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 0,744 pagamentos/s (22 janelas completas); vazão média da sessão: 0,746 pagamentos/s
+  latência (ms, só sucessos): média 1341,3, mediana 1376,8, p95 1474,4, p99 1752,6, desvio-padrão 140,5
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,454 W (300 amostras), sessão 1,517 W (1342 amostras)
+  energia adicional por pagamento: 84,6 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 08:19:00]   devolvendo 100000 sat (pc → Pi)
+[24/10 08:19:02]   devolução: ok
+[24/10 08:19:02]   saldo local do Pi no canal: 162120 sat
+[24/10 08:19:02] <<< sessão 2saltos-sinc-2 concluída
+[24/10 08:20:02] >>> sessão 2saltos-conc-2  (caminho 2saltos, modo concorrente, 1000 × 100 sat)
+[24/10 08:20:03]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 08:25:04]   pagamentos em andamento no Pi
+[24/10 08:28:34]   energia desligada
+Sessão 2saltos-conc-2 (modo concorrente): 1000 pagamentos em 194,9 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 5,106 pagamentos/s (3 janelas completas); vazão média da sessão: 5,130 pagamentos/s
+  latência (ms, só sucessos): média 1944,1, mediana 1930,9, p95 2216,3, p99 2368,0, desvio-padrão 200,6
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,484 W (300 amostras), sessão 1,620 W (195 amostras)
+  energia adicional por pagamento: 26,6 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 08:28:35]   devolvendo 100000 sat (pc → Pi)
+[24/10 08:28:36]   devolução: ok
+[24/10 08:28:36]   saldo local do Pi no canal: 161120 sat
+[24/10 08:28:36] <<< sessão 2saltos-conc-2 concluída
+[24/10 08:29:36] >>> sessão 1salto-sinc-3  (caminho 1salto, modo sincrono, 1000 × 100 sat)
+[24/10 08:29:37]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 08:34:38]   pagamentos em andamento no Pi
+[24/10 08:46:42]   energia desligada
+Sessão 1salto-sinc-3 (modo sincrono): 1000 pagamentos em 716,0 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 1,382 pagamentos/s (11 janelas completas); vazão média da sessão: 1,397 pagamentos/s
+  latência (ms, só sucessos): média 715,9, mediana 797,5, p95 828,8, p99 853,8, desvio-padrão 121,5
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,486 W (300 amostras), sessão 1,534 W (716 amostras)
+  energia adicional por pagamento: 34,8 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 08:46:43]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 08:46:47]   devolução: ok
+[24/10 08:46:47]   saldo local do Pi no canal: 161120 sat
+[24/10 08:46:47] <<< sessão 1salto-sinc-3 concluída
+[24/10 08:47:47] >>> sessão 1salto-conc-3  (caminho 1salto, modo concorrente, 1000 × 100 sat)
+[24/10 08:47:48]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 08:52:48]   pagamentos em andamento no Pi
+[24/10 08:54:36]   energia desligada
+Sessão 1salto-conc-3 (modo concorrente): 1000 pagamentos em 98,1 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 10,117 pagamentos/s (1 janelas completas); vazão média da sessão: 10,197 pagamentos/s
+  latência (ms, só sucessos): média 977,3, mediana 950,6, p95 1222,7, p99 1247,6, desvio-padrão 93,8
+  taxa de roteamento: total 0 msat, média 0,0 msat/pagamento
+  energia: repouso 1,477 W (300 amostras), sessão 1,646 W (98 amostras)
+  energia adicional por pagamento: 16,5 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 08:54:37]   devolvendo 100000 sat (hetzner → Pi)
+[24/10 08:54:41]   devolução: ok
+[24/10 08:54:42]   saldo local do Pi no canal: 160835 sat
+[24/10 08:54:42] <<< sessão 1salto-conc-3 concluída
+[24/10 08:55:42] >>> sessão 2saltos-sinc-3  (caminho 2saltos, modo sincrono, 1000 × 100 sat)
+[24/10 08:55:42]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 09:00:43]   pagamentos em andamento no Pi
+[24/10 09:23:24]   energia desligada
+Sessão 2saltos-sinc-3 (modo sincrono): 1000 pagamentos em 1350,4 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 0,740 pagamentos/s (22 janelas completas); vazão média da sessão: 0,741 pagamentos/s
+  latência (ms, só sucessos): média 1350,3, mediana 1381,2, p95 1457,4, p99 1592,5, desvio-padrão 123,9
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,459 W (300 amostras), sessão 1,510 W (1350 amostras)
+  energia adicional por pagamento: 67,7 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 09:23:25]   devolvendo 100000 sat (pc → Pi)
+[24/10 09:23:27]   devolução: ok
+[24/10 09:23:27]   saldo local do Pi no canal: 159835 sat
+[24/10 09:23:27] <<< sessão 2saltos-sinc-3 concluída
+[24/10 09:24:27] >>> sessão 2saltos-conc-3  (caminho 2saltos, modo concorrente, 1000 × 100 sat)
+[24/10 09:24:28]   energia ligada; repouso de 300 s (sem outros comandos no Pi)
+[24/10 09:29:28]   pagamentos em andamento no Pi
+[24/10 09:32:48]   energia desligada
+Sessão 2saltos-conc-3 (modo concorrente): 1000 pagamentos em 189,5 s
+  sucesso: 1000 de 1000 (100,00 %)
+  vazão por janelas de 60 s: 5,294 pagamentos/s (3 janelas completas); vazão média da sessão: 5,277 pagamentos/s
+  latência (ms, só sucessos): média 1886,4, mediana 1843,3, p95 2158,0, p99 2419,4, desvio-padrão 203,4
+  taxa de roteamento: total 1000000 msat, média 1000,0 msat/pagamento
+  energia: repouso 1,459 W (300 amostras), sessão 1,557 W (190 amostras)
+  energia adicional por pagamento: 18,4 mJ
+  linha-resumo acrescentada a /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+[24/10 09:32:49]   devolvendo 100000 sat (pc → Pi)
+[24/10 09:32:50]   devolução: ok
+[24/10 09:32:51]   saldo local do Pi no canal: 158835 sat
+[24/10 09:32:51] <<< sessão 2saltos-conc-3 concluída
+[24/10 09:33:51] === TODAS AS SESSÕES CONCLUÍDAS ===
+[24/10 09:33:51] resumo em /home/whiskyrie/Projetos/TCC/ln-coletor/dados-sessoes/resumo.csv
+sessao          modo         pagamentos  sucessos  sucesso_pct  duracao_s  vazao_janelas_ps  janelas  vazao_media_ps  lat_media_ms  lat_mediana_ms  lat_p95_ms  lat_p99_ms  lat_desvio_ms  taxa_total_ms
+1salto-sinc-1   sincrono     1000        1000      100.0000     732.974    1.3653            12       1.3643          732.9519      795.1993        832.9791    1184.7046   136.7214       0            
+1salto-conc-1   concorrente  1000        1000      100.0000     100.110    9.8500            1        9.9890          997.9536      942.5133        1229.1097   1706.5493   146.2272       0            
+2saltos-sinc-1  sincrono     1000        1000      100.0000     1376.575   0.7258            22       0.7264          1376.5518     1376.4067       1534.7810   2240.9970   189.4851       1000000      
+2saltos-conc-1  concorrente  1000        1000      100.0000     193.903    5.1500            3        5.1572          1928.7702     1977.7512       2181.5143   2439.0814   202.1286       1000000      
+1salto-sinc-2   sincrono     1000        1000      100.0000     729.679    1.3708            12       1.3705          729.6572      799.1910        837.4162    868.7092    119.6153       0            
+1salto-conc-2   concorrente  1000        1000      100.0000     98.731     10.0667           1        10.1285         981.9442      949.0030        1231.0941   1379.2639   125.2936       0            
+2saltos-sinc-2  sincrono     1000        1000      100.0000     1341.360   0.7439            22       0.7455          1341.3384     1376.7909       1474.4179   1752.6121   140.5338       1000000      
+2saltos-conc-2  concorrente  1000        1000      100.0000     194.914    5.1056            3        5.1305          1944.0561     1930.8713       2216.2670   2367.9869   200.6483       1000000      
+1salto-sinc-3   sincrono     1000        1000      100.0000     715.960    1.3818            11       1.3967          715.9372      797.5408        828.8479    853.7668    121.5250       0            
+1salto-conc-3   concorrente  1000        1000      100.0000     98.072     10.1167           1        10.1966         977.2746      950.6373        1222.7403   1247.6464   93.8357        0            
+2saltos-sinc-3  sincrono     1000        1000      100.0000     1350.365   0.7402            22       0.7405          1350.3427     1381.2157       1457.4168   1592.4873   123.9299       1000000      
+2saltos-conc-3  concorrente  1000        1000      100.0000     189.508    5.2944            3        5.2768          1886.3509     1843.2608       2158.0281   2419.4034   203.4193       1000000      
